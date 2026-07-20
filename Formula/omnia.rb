@@ -9,21 +9,21 @@
 class Omnia < Formula
   desc "Persistent memory for AI coding agents — local-first with self-hosted multi-tenant cloud sync"
   homepage "https://github.com/Velion-SpA/omnia"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.2/omnia_0.1.2_darwin_amd64.tar.gz"
-      sha256 "4af9f7acaf9c2abc47aacece3f3c21aa5398e04a4e348d5b910e1e0db28646a6"
+      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.3/omnia_0.1.3_darwin_amd64.tar.gz"
+      sha256 "dcc5a554cbc5e55d8149ef4f4bf400e4871af15e6201dffdfa2f95d2d78a12ef"
 
       def install
         bin.install "omnia"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.2/omnia_0.1.2_darwin_arm64.tar.gz"
-      sha256 "1e4d8e1771ed34b9c360ab2c9d1e675474e21f2cacbe6dc1bb5ad98e2217704c"
+      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.3/omnia_0.1.3_darwin_arm64.tar.gz"
+      sha256 "6ae96ff295b344db435ff2ebeac4d8e754c9ef044d214f6e604305a9fc1ce13d"
 
       def install
         bin.install "omnia"
@@ -33,16 +33,16 @@ class Omnia < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.2/omnia_0.1.2_linux_amd64.tar.gz"
-      sha256 "4b2b84dfb8a7802fab94751a4f8359e2ef69a0202345b7050008b60dbe09d9b9"
+      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.3/omnia_0.1.3_linux_amd64.tar.gz"
+      sha256 "abecc5b847a42ca4aa5fcba4db3b7a8ec67d874bbadd9f65a645c054f14e4735"
 
       def install
         bin.install "omnia"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.2/omnia_0.1.2_linux_arm64.tar.gz"
-      sha256 "f96934b51e6341e2186e9c1ce4a587f960afc8a5ffa5a9bfa12eca7fe8a5bdc2"
+      url "https://github.com/Velion-SpA/omnia/releases/download/v0.1.3/omnia_0.1.3_linux_arm64.tar.gz"
+      sha256 "6e8055f09b6b0c4ee438c7e106a37aa0baf06c59e90094f7d960b307cb5cb56b"
 
       def install
         bin.install "omnia"
